@@ -1,0 +1,69 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --primary_1:#070707;
+  --primary_2:#011221;
+  --secundary_1:#607B96;
+  --secundary_2:rgb(96, 123, 150,50%);
+  --secundary_3:#43D9AD;
+  --secundary_4:#FFFFFF;
+  --accent_1:#E99287;
+  --accent_2:#1E2D3D;
+  --accent_3:#4D5BCE;
+  --accent_4:#7000FF;
+}
+
+body{
+  background:var(--primary_1);
+  color:var(--secundary_1);
+  
+  font-family: 'Fira Code', monospace;
+  font-size: 1.6rem;
+}
+.container{
+  max-width: 192rem;
+  margin: 0 8rem;
+}
+
+.nav{
+  padding-top: 4rem;
+  display: flex;
+  justify-content: end;  
+  align-items: center;
+  border-bottom: var(--accent_2) solid 0.1rem;
+}
+
+.nav .menu{
+  display: flex;
+  list-style: none;
+  
+}
+
+.nav .menu .menu-item{
+  padding: 2rem;
+  border-left: var(--accent_2) solid 0.1rem;
+  width: 15rem;
+  display: flex;
+}
+.nav .menu .menu-item:nth-child(1){
+  border-left: none;
+}
+
+.nav .menu .menu-item a{
+  margin: 0 auto;
+  text-decoration: none;
+  color: var(--secundary_2);
+  font-size: 1.8rem;
+}
+
+.nav .menu .menu-item a:hover{
+  color: var(--secundary_4);
+}
