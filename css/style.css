@@ -28,6 +28,10 @@ body{
   font-family: 'Fira Code', monospace;
   font-size: 1.6rem;
 }
+header{
+  border-bottom: var(--accent_2) solid 0.1rem;
+}
+
 .container{
   max-width: 192rem;
   margin: 0 8rem;
@@ -73,15 +77,15 @@ body{
   height: 85vh;
   display: flex;
   align-items: center;
+  justify-content: left;
 }
 .header div {
   margin: 0 auto;
-  width: 70%;
-  /* background: #E99287; */
+  width: 100%;
 }
-.header div:nth-child(2){
+/* .header div:nth-child(2){
   width: 30%;
-}
+} */
 
 .header .header_text{
   color:var(--secundary_4);
@@ -104,4 +108,8 @@ body{
   color: var(--secundary_1);
   font-size: 2.5rem;
   font-weight: 400;
+}
+
+.img_profile{
+  width: 25rem;
 }
